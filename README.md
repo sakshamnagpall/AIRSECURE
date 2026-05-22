@@ -37,6 +37,4 @@ npm start
 - The current demo uses a simulated detection flow to keep the app lightweight and directly runnable.
 - To integrate a real YOLOv10n model, replace the detection stub in `public/detector.js` with your model inference pipeline.
 
-## Upload to GitHub
 
-This repository is ready for GitHub. Commit the files and push to your remote repository after you create it.
