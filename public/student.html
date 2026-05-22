@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Airsecure Student Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <h1>Student Portal</h1>
+      <p class="tagline">Track attendance and explore your progress subject by subject.</p>
+    </div>
+    <nav>
+      <a href="detector.html">Open Monitor</a>
+      <a id="logoutLink" href="#">Logout</a>
+    </nav>
+  </header>
+
+  <main class="app-body">
+    <section class="card dashboard-card">
+      <h2>Welcome, <span id="studentName">Student</span></h2>
+      <p id="summaryText">Loading attendance summary...</p>
+    </section>
+
+    <section class="card dashboard-card">
+      <h2>Attendance Chart</h2>
+      <canvas id="attendanceChart" height="260"></canvas>
+    </section>
+
+    <section class="card dashboard-card">
+      <h2>Your Attendance Records</h2>
+      <div class="table-scroll">
+        <table id="attendanceTable">
+          <thead>
+            <tr>
+              <th>Subject</th>
+              <th>Date</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+  <script src="student.js"></script>
+</body>
+</html>

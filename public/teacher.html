@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Airsecure Teacher Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <h1>Teacher Dashboard</h1>
+      <p class="tagline">Attendance, student management, and monitoring—all in one place.</p>
+    </div>
+    <nav>
+      <a href="detector.html">Open Monitor</a>
+      <a id="logoutLink" href="#">Logout</a>
+    </nav>
+  </header>
+
+  <main class="app-body">
+    <section class="card dashboard-card">
+      <h2>Attendance Recorder</h2>
+      <form id="attendanceForm" class="grid-form">
+        <input id="studentEmail" type="email" placeholder="student@airsecure.local" required />
+        <input id="subject" type="text" placeholder="Subject" required />
+        <input id="date" type="date" required />
+        <select id="status" required>
+          <option value="Present">Present</option>
+          <option value="Absent">Absent</option>
+          <option value="Late">Late</option>
+        </select>
+        <button type="submit" class="btn btn-primary">Record Attendance</button>
+      </form>
+    </section>
+
+    <section class="card dashboard-card">
+      <h2>Attendance Summary</h2>
+      <div id="summaryContainer"></div>
+    </section>
+
+    <section class="card dashboard-card">
+      <h2>Attendance Records</h2>
+      <div class="table-scroll">
+        <table id="attendanceTable">
+          <thead>
+            <tr>
+              <th>Student</th>
+              <th>Email</th>
+              <th>Subject</th>
+              <th>Date</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card dashboard-card">
+      <h2>QR Code Generator</h2>
+      <form id="qrForm" class="grid-form">
+        <input id="studentId" type="number" placeholder="Student ID" required />
+        <button type="submit" class="btn btn-secondary">Generate QR Code</button>
+      </form>
+      <div id="qrResult" class="qr-output"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+  <script src="teacher.js"></script>
+</body>
+</html>

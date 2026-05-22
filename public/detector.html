@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Airsecure Object Monitor</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <h1>Real-Time Monitor</h1>
+      <p class="tagline">Stream webcam video and detect restricted items instantly.</p>
+    </div>
+    <nav>
+      <a href="index.html">Back to Login</a>
+    </nav>
+  </header>
+
+  <main class="monitor-body">
+    <section class="card monitor-card">
+      <div class="video-stack">
+        <video id="video" autoplay muted playsinline></video>
+        <canvas id="overlay"></canvas>
+      </div>
+      <div class="monitor-panel">
+        <h2>Status</h2>
+        <p id="monitorMessage">Waiting for webcam access...</p>
+        <ul id="detectedList"></ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="detector.js"></script>
+</body>
+</html>

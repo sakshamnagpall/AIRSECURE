@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Professor Kim",
+    "email": "teacher@airsecure.local",
+    "password": "$2a$10$kfUWgfgG2ikPBz9sa41ZU.k16qF/3gPFmHF/wqQHejyawh73YVjVi",
+    "role": "teacher",
+    "subject": "All Subjects"
+  },
+  {
+    "id": 2,
+    "name": "Aarav Singh",
+    "email": "student@airsecure.local",
+    "password": "$2a$10$q01Q/9fJHGdCXU0Uc8tZeeZ5VAfF/z6IoC4FiSZXaQ1KqLJNqACwe",
+    "role": "student",
+    "subject": "Mathematics"
+  }
+]

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Airsecure Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="panel auth-panel">
+      <h1>Airsecure</h1>
+      <p class="tagline">Real-time monitoring and attendance intelligence for classrooms.</p>
+
+      <form id="loginForm" class="card form-card">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="teacher@airsecure.local" required />
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" placeholder="Enter your password" required />
+
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+
+      <p class="small-text">New to Airsecure? <a href="signup.html">Create an account</a></p>
+
+      <p class="small-text">Want to test object detection? <a href="detector.html">Open camera monitor</a></p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
